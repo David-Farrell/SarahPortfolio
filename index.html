@@ -3,6 +3,7 @@
 <title>Sarah Van Eck</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="sarah.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,6 +11,24 @@
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
+/* Loader Icon 
+function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 1000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+  setVisible('.page', true);
+  setVisible('#loading', false);
+}); */
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
@@ -17,7 +36,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<body class="w3-black">
+<body class="w3-black" background-color:#d5d2d;>
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -102,8 +121,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <br>
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
-        <a href="sarah_resume.pdf" download><i class="fa fa-download"></i> Download Resume</a>
+       <a href="sarah_resume.pdf" download><i class="fa fa-download"></i> Download Resume</a>        
     </button>
+    
+    <!-- BUTTON WITH COOL ANIMATION
+    <button class="hvr-underline-from-left">
+       <a href="sarah_resume.pdf" download><i class="fa fa-download"></i><br>Download Resume<br> ________________________</a>
+    </button> -->
     
     <!-- Internships -->
     <h3 class="w3-padding-24 w3-text-light-grey">Internships</h3>  
